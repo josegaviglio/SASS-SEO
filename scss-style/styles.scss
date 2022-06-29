@@ -1,0 +1,62 @@
+//  IMPORTANDO EL RESET DE LA PAGINA
+@import "../scss-style/reset";
+@import "../scss-style/variables";
+@import "../scss-style/mixins";
+
+//  APLICANDO NESTING O ANIDADO 
+.hx {
+    font-size: 2rem;
+    color: $magenta;
+    text-shadow: 1px 1px 5px $sass2;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+}
+
+.name {
+    @include fonts(2rem, none);
+}
+
+main {
+    ul {
+        li {
+            a {
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+
+/*  INDEX   */
+.div-content {
+    margin-top: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 5rem;
+
+    img {
+        @include sizes(20rem, 20rem);
+        box-shadow: 2px 2px 10px 10px $sass2;
+    }
+
+    p {
+        @include fonts(2rem, italic);
+        text-shadow: 1px 1px 5px black;
+        @include sizes(20rem, 25rem);
+        margin-left: 10rem;
+    }
+}
+
+/*  CONTACTO    */
+footer {
+    @include fonts(2rem, none);
+    font-weight: bold;
+
+    img {
+        @include sizes(5rem, 2rem);
+    }
+}
+
+// IMPORTANDO LAS MEDIA QUERIES
+@import "../scss-style/screen";

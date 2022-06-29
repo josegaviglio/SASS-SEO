@@ -1,0 +1,26 @@
+//  VARIABLE    //
+$sass2: black;
+//  MAPS    //
+$botones: (
+    1:$sass2,
+    2:$sass2,
+    3:$sass2,
+);
+
+@each $botons,
+$valor in $botones {
+    .boton-#{$botons} {
+        background-color: $valor;
+        color: white;
+        border-color: $sass2;
+        font-size: 1.2rem;
+        margin-top: 1rem;
+
+        &:hover {
+            background-color: white;
+            border-color: $sass2;
+            color: $sass2;
+            font-weight: bold;
+        }
+    }
+}
